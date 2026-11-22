@@ -12,4 +12,4 @@ USER app
 EXPOSE 5000
 
 # Load the Flask object from the app.app module.
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--access-logfile", "-", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--access-logfile", "-", "app.app:app"]
